@@ -1,0 +1,13 @@
+com\glovoapp\backender\OrderVM.class
+com\glovoapp\backender\CourierService.class
+com\glovoapp\backender\OrderService.class
+com\glovoapp\backender\CourierRepository$1.class
+com\glovoapp\backender\Courier.class
+com\glovoapp\backender\OrderRepository$1.class
+com\glovoapp\backender\Vehicle.class
+com\glovoapp\backender\Location.class
+com\glovoapp\backender\CourierRepository.class
+com\glovoapp\backender\API.class
+com\glovoapp\backender\Order.class
+com\glovoapp\backender\DistanceCalculator.class
+com\glovoapp\backender\OrderRepository.class
