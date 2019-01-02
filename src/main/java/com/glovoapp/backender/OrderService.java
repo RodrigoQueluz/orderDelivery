@@ -78,12 +78,6 @@ class OrderService {
 					.sorted(createOrderOfPriorities())
 					.collect(Collectors.toList());
 		
-		for(Order order : result) {
-    		System.out.println("VIP -> " + order.getVip() + " | FOOD -> " + order.getFood() + " | D -> " + DistanceCalculator.calculateDistance(courier.getLocation(), order.getPickup()));
-    	}
-		
-		System.out.println("----------------------");
-		
 		return result;
 
 	}
@@ -106,7 +100,7 @@ class OrderService {
 
 	}
 
-	private boolean isThereAnyPrioritySet() {
+	public boolean isThereAnyPrioritySet() {
 		return listOfPriorities.size() > 0;
 	}
 

@@ -5,7 +5,7 @@ import static java.lang.Math.*;
 /**
  * Shamelessly copied from https://github.com/jasonwinn/haversine
  */
-public class DistanceCalculator {
+public final class DistanceCalculator {
 
     private static final int EARTH_RADIUS = 6371;
 

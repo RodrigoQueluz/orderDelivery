@@ -8,5 +8,35 @@
       "lat": 41.3965463,
       "lon": 2.1963997
     }
-  }
+  },
+  {
+        "box": false, 
+        "vehicle": "MOTORCYCLE", 
+        "location": {
+            "lat": 41.38572707769643, 
+            "lon": 2.1611940451935747
+        }, 
+        "id": "courier-2", 
+        "name": "Haley Louden"
+    },
+    {
+        "box": false, 
+        "vehicle": "BICYCLE", 
+        "location": {
+            "lat": 41.38572707769643, 
+            "lon": 2.1611940451935747
+        }, 
+        "id": "courier-3", 
+        "name": "Johnatan Pier"
+    },
+    {
+        "box": true, 
+        "vehicle": "ELECTRIC_SCOOTER", 
+        "location": {
+            "lat": 41.37654789805553, 
+            "lon": 2.187245413661272
+        }, 
+        "id": "courier-4", 
+        "name": "Nicolasa Louden"
+    }
 ]

@@ -22,21 +22,20 @@ class CourierService {
 		return isNotFurtherThanParametrized(courier, order) || courierHasVehicleNeeded(courier);
 	}
 
-	private boolean courierHasVehicleNeeded(Courier courier) {
+	public boolean courierHasVehicleNeeded(Courier courier) {
 		return courier.getVehicle().equals(Vehicle.ELECTRIC_SCOOTER) || courier.getVehicle().equals(Vehicle.MOTORCYCLE);
 	}
 
-	private boolean isNotFurtherThanParametrized(Courier courier, Order order) {
+	public boolean isNotFurtherThanParametrized(Courier courier, Order order) {
 		return DistanceCalculator.calculateDistance(courier.getLocation(), order.getPickup()) < maxDistance;
 	}
 
-	private boolean courierHasBox(Courier courier, Order order) {
+	public boolean courierHasBox(Courier courier, Order order) {
 
 		if (courier.getBox()) {
 			return itensThatRequiresBoxes.parallelStream().anyMatch(order.getDescription().toLowerCase()::contains);
 		} else {
-			return itensThatRequiresBoxes.parallelStream()
-					.allMatch((item) -> !order.getDescription().toLowerCase().contains(item));
+			return itensThatRequiresBoxes.parallelStream().allMatch((item) -> !order.getDescription().toLowerCase().contains(item));
 		}
 
 	}
